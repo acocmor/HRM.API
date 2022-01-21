@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Microsoft.AspNetCore.Routing;
 using System.Web.Mvc;
 
 namespace HRM.API.App_Start

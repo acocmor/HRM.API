@@ -134,6 +134,15 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Mvc.Routing/1.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mvc.Routing.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mvc.Routing.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -385,6 +394,19 @@
         "version.txt"
       ]
     },
+    "Mvc.Routing/1.0.0.4": {
+      "sha512": "bBafNKusaQQgspkLiY5B2WuH+wGDPTopl+V+BuLb5dQqQWEr1g3NR7Z+vjJlN8/jYjLBOPeR0QtVMdz7zLdkzg==",
+      "type": "package",
+      "path": "mvc.routing/1.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build_log.txt",
+        "lib/net40/Mvc.Routing.dll",
+        "mvc.routing.1.0.0.4.nupkg.sha512",
+        "mvc.routing.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -560,6 +582,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 5.0.13",
+      "Mvc.Routing >= 1.0.0.4",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -606,6 +629,10 @@
             "target": "Package",
             "version": "[5.0.13, )"
           },
+          "Mvc.Routing": {
+            "target": "Package",
+            "version": "[1.0.0.4, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
@@ -629,5 +656,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Mvc.Routing 1.0.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Mvc.Routing",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

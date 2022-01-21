@@ -1090,6 +1090,15 @@
           }
         }
       },
+      "Mvc.Routing/1.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mvc.Routing.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mvc.Routing.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -3740,6 +3749,19 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Mvc.Routing/1.0.0.4": {
+      "sha512": "bBafNKusaQQgspkLiY5B2WuH+wGDPTopl+V+BuLb5dQqQWEr1g3NR7Z+vjJlN8/jYjLBOPeR0QtVMdz7zLdkzg==",
+      "type": "package",
+      "path": "mvc.routing/1.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build_log.txt",
+        "lib/net40/Mvc.Routing.dll",
+        "mvc.routing.1.0.0.4.nupkg.sha512",
+        "mvc.routing.nuspec"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -7222,6 +7244,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.13",
+      "Mvc.Routing >= 1.0.0.4",
       "Newtonsoft.Json >= 13.0.1",
       "Serilog >= 2.10.0"
     ]
@@ -7303,6 +7326,10 @@
             "target": "Package",
             "version": "[5.0.13, )"
           },
+          "Mvc.Routing": {
+            "target": "Package",
+            "version": "[1.0.0.4, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
@@ -7368,6 +7395,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Mvc.Routing 1.0.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Mvc.Routing",
       "targetGraphs": [
         "net5.0"
       ]
