@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HRM.API.Core.Interfaces;
 
-namespace HRM.ApplicationCore.AppServices
+namespace HRM.API.Core.AppServices
 {
-    internal class DepartmentManager
+    public class EmployeeManager : IEmployeeService
     {
     }
 }

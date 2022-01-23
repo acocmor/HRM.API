@@ -9,5 +9,7 @@ namespace HRM.Entity.Entities
 {
     public class Position : EntityBase
     {
+        public string Name { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }

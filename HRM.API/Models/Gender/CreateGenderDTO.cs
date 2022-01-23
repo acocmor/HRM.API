@@ -2,5 +2,6 @@
 {
     public class CreateGenderDTO
     {
+        public string Name { get; set; }
     }
 }

@@ -1,13 +1,15 @@
 ﻿using HRM.Entity.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace HRM.Entity.Entities
 {
     public class Address : EntityBase
     {
+        public string Detail { get; set; }
+        public string SubDistrict { get; set; }
+        public string District { get; set; }
+        public string City { get; set; }
+        public IKey EmployeeId { get; set; }
+        public Employee Employee { get; set; }
     }
 }

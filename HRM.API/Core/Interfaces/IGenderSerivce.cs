@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.ApplicationCore.AppServices
+namespace HRM.API.Core.Interfaces
 {
-    internal class GenderManager
+    public interface IGenderService
     {
     }
 }

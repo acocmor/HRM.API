@@ -2,5 +2,6 @@
 {
     public class CreatePositionDTO
     {
+        public string Name { get; set; }
     }
 }

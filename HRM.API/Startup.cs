@@ -1,3 +1,4 @@
+using HRM.API.Core.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,10 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+
 
 namespace HRM.API
 {
@@ -27,7 +26,16 @@ namespace HRM.API
         public void ConfigureServices(IServiceCollection services)
         {
 
+            // AutoMapper
+            //services.AddAutoMapper(GetType().Startup);
+
+            services.AddSharedServices(Configuration);
+            services.AddDbContext(Configuration);
+            services.AddAutoMapper(Configuration);
+            //services.AddJWT(Configuration);
+            
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HRM.API", Version = "v1" });

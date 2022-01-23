@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.ApplicationCore.Interfaces
+namespace HRM.API.Core.Interfaces
 {
-    internal class IAddressService
+    public interface IPositionService
     {
     }
 }
